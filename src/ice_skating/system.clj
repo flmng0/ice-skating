@@ -8,8 +8,7 @@
                               :handler (ig/ref ::router/handler)}
 
              ::router/handler {:query-fn (ig/ref ::data/query-fn)
-                               :resource-root (ig/profile {:dev nil
-                                                           :prod "www/build"})}
+                               :file-root "public"}
 
              ::data/db {:dbtype "sqlite" :dbname "ice-skating.db"}
              ::data/query-fn {:db (ig/ref ::data/db)}})

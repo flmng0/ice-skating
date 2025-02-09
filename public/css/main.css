@@ -1,0 +1,12 @@
+body > header {
+  position: sticky;
+  top: 0;
+  transition: box-shadow 0.4s ease-in-out;
+
+  &.scrolled {
+    box-shadow: var(--pico-box-shadow);
+    border-bottom: thin solid var(--pico-muted-border-color);
+    backdrop-filter: blur(1rem);
+    background-color: color(from var(--pico-header-background) rgb r g b / 0.9);
+  }
+}
