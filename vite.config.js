@@ -1,6 +1,8 @@
-import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig } from 'vite';
+import elmPlugin from "vite-plugin-elm";
+
+import { sveltekit } from "@sveltejs/kit/vite";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-	plugins: [sveltekit()]
+  plugins: [sveltekit(), elmPlugin()],
 });
