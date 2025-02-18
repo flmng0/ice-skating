@@ -1,1 +1,0 @@
-(ns ice-skating.core)
